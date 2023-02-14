@@ -1,0 +1,42 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background: rgba(17, 17, 122, 0.6);
+}
+
+.column1{
+    background-color: rgba(17, 17, 122, 0.6);
+    color: whitesmoke;
+}
+
+.column{
+    color: whitesmoke;
+    background-color: rgba(17, 17, 122, 0.6);
+}
+
+body {
+    padding-top: 0px;
+  }
+
+a {
+    text-decoration: none;
+    color: rgba(17, 17, 122);
+}
+
+@media (max-width: 300px) {
+    html { font-size: 70%; }
+}
+
+@media (min-width: 500px) {
+    html { font-size: 80%; }
+}
+
+@media (min-width: 700px) {
+    html { font-size: 100%; }
+}
+
+@media (min-width: 1200px) {
+    html { font-size: 120%; }
+}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+        background-image: url('../static/contacts.jpeg');
+        background-size: cover;
+    }
+</style>
+<section class="text-center p-5">
+    <div class="container p-5">
+        <table>
+            <tr>
+                <th class="column1">Contacts</th>
+            </tr>
+            {% for contact in contacts %}
+            <tr>
+                <td class="column">{{ contact.first }}</td>
+                <td class="column">{{ contact.last }}</td>
+                <td class="column">{{ contact.email }}</td>
+                <td class="column">{{ contact.phone_number }}</td>
+                <td class="column">{{ contact.address }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        </div>
+    </section>
+{% endblock %}
